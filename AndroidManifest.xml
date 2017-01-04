@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cse.mavslist"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="test"
+        android:targetPackage="com.cse.mavslist" />
+
+    <permission
+        android:name="com.cse.mavslist.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cse.mavslist.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.cse.mavslist.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cse.mavslist.RegisterActivity" />
+        <activity
+            android:name="com.cse.mavslist.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity android:name="com.cse.mavslist.AccountActivity" />
+        <activity android:name="com.cse.mavslist.BuysellActivity" />
+        <activity android:name="com.cse.mavslist.EventsActivity" />
+        <activity android:name="com.cse.mavslist.ForumActivity" />
+        <activity android:name="com.cse.mavslist.HousingActivity" />
+        <activity android:name="com.cse.mavslist.JobsActivity" />
+        <activity android:name="com.cse.mavslist.BuysellAdd" />
+        <activity android:name="com.cse.mavslist.HouseAdd" />
+        <activity android:name="com.cse.mavslist.JobsAdd" />
+        <activity android:name="com.cse.mavslist.EventsAdd" />
+        <activity android:name="com.cse.mavslist.SearchHouseResultActivity" />
+        <activity android:name="com.cse.mavslist.SearchJobsActivity" />
+        <activity android:name="com.cse.mavslist.SearchJobsResultActivity" />
+        <activity android:name="com.cse.mavslist.SearchEventsActivity" />
+        <activity android:name="com.cse.mavslist.SearchEventsResultActivity" />
+        <activity android:name="com.cse.mavslist.SingleTrackActivity" />
+        <activity android:name="com.cse.mavslist.SendEmailActivity" />
+        <activity android:name="com.cse.mavslist.Fake" />
+        <activity android:name="com.cse.mavslist.Fakehs" />
+        <activity android:name="com.cse.mavslist.Fakeeve" />
+        <activity android:name="com.cse.mavslist.Fakejb" />
+        <activity android:name="com.cse.mavslist.SingleTpActivity" />
+                <activity android:name="com.cse.mavslist.SearchTpActivity" />
+                <activity android:name="com.cse.mavslist.TopicAdd" />
+                <activity
+            android:name="com.cse.mavslist.SearchBsActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.cse.mavslist.SearchBsResultActivity"
+            android:label="@string/title_activity_search_result" >
+        </activity>
+        <activity
+            android:name="com.cse.mavslist.Buysell"
+            android:label="@string/title_activity_buysell" >
+        </activity>
+        <activity
+            android:name="com.cse.mavslist.SearchHouseActivity"
+            android:label="@string/title_activity_search_house" >
+        </activity>
+        <activity
+            android:name="com.cse.mavslist.SingleBuysellActivity"
+            android:label="@string/title_activity_single_buysell" >
+        </activity>
+        <activity
+            android:name="com.cse.mavslist.SingleEventsActivity"
+            android:label="@string/title_activity_single_buysell" >
+        </activity>
+\
+        <activity
+            android:name="com.cse.mavslist.SingleHouseActivity"
+            android:label="@string/title_activity_single_buysell" >
+        </activity>
+        <activity
+            android:name="com.cse.mavslist.SingleJobsActivity"
+            android:label="@string/title_activity_single_buysell" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCjsT3I3OrpvXq-zH6p20IPRe-2DknFEM0" />
+
+        <activity
+            android:name="com.cse.mavslist.AccountEdit"
+            android:label="@string/title_activity_account_edit" >
+        </activity>
+    </application>
+
+</manifest>
